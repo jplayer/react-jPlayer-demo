@@ -25,7 +25,7 @@ if (!dev) {
 export default {
   context: __dirname,
   entry: {
-    'example': './src/app.jsx',
+    example: './src/app.jsx',
   },
   devtool: dev ? 'inline-sourcemap' : false,
   output: {
