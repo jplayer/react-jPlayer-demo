@@ -8,7 +8,7 @@ git clone https://github.com/MartinDawson/react-jPlayerExamples.git
 
 npm install
 
-npm run start
+npm run dev
 
 open http://localhost:8080/
 ```
