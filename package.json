@@ -2,9 +2,10 @@
   "name": "jplayer-examples",
   "version": "1.0.0",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --inline --content-base public/",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --progress --inline --content-base public/",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack",
-    "lint": "eslint --fix --ext .jsx,.js ./src"
+    "lint": "eslint --fix --ext .jsx,.js ./src",
+    "deploy": "git push azure master"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.3",
