@@ -40,7 +40,11 @@ export default {
     loaders: [
       {
         test: /\.jsx?$/,
-        exclude: /node_modules/,
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'node_modules/react-jplayer'),
+          path.resolve(__dirname, 'node_modules/react-jplaylist'),
+        ],
         loader: 'babel-loader',
       },
       {

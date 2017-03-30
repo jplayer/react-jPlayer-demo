@@ -7,6 +7,7 @@ import { getInitialStates, reducer } from 'react-jplayer';
 import '../assets/examples.less';
 import AudioPlayer from './players/audioPlayer';
 import VideoPlayer from './players/videoPlayer';
+import LivePlayer from './players/livePlayer';
 import MultiplePlayers from './players/multiplePlayers';
 import NavContainer from './helpers/navContainer';
 import NavContentContainer from './helpers/navContentContainer';
@@ -18,6 +19,7 @@ import StatusWrapper from './helpers/statusWrapper';
 const connectedJPlayers = [
   AudioPlayer,
   VideoPlayer,
+  LivePlayer,
   ...MultiplePlayers,
 ];
 
@@ -28,6 +30,7 @@ const App = () => (
     <NavBar>
       <NavLink>Audio</NavLink>
       <NavLink>Video</NavLink>
+      <NavLink>Live Stream</NavLink>
       <NavLink>Multiple</NavLink>
     </NavBar>
     <NavContentContainer>
@@ -39,6 +42,11 @@ const App = () => (
       <NavContent key={VideoPlayer.options.id}>
         <StatusWrapper id={VideoPlayer.options.id}>
           <VideoPlayer />
+        </StatusWrapper>
+      </NavContent>
+      <NavContent key={LivePlayer.options.id}>
+        <StatusWrapper id={LivePlayer.options.id}>
+          <LivePlayer />
         </StatusWrapper>
       </NavContent>
       <NavContent key="MultiPlayers">
