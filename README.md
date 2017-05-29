@@ -1,10 +1,10 @@
 # react-jPlayerExamples
-Examples for react-jPlayer and react-jPlaylist
+Demo website for react-jPlayer
 
 ### Run
 
 ```
-git clone https://github.com/MartinDawson/react-jPlayerExamples.git
+git clone https://github.com/jPlayer/react-jPlayer-demo.git
 
 npm install
 
