@@ -1,4 +1,4 @@
-# react-jPlayerExamples
+# react-jPlayer-demo
 Demo website for react-jPlayer
 
 ### Run

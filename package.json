@@ -1,5 +1,5 @@
 {
-  "name": "jplayer-examples",
+  "name": "react-jplayer-demo",
   "version": "1.0.0",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --inline --content-base public/",
